@@ -19,34 +19,16 @@
             --active: #e9e9ed;
         }
 
-        * {
-            box-sizing: border-box;
-        }
-
+        * { box-sizing: border-box; }
         body {
             margin: 0;
             background: var(--bg);
             color: var(--text);
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
         }
-
-        button,
-        input,
-        textarea,
-        select {
-            font: inherit;
-        }
-
-        button {
-            cursor: pointer;
-        }
-
-        .app {
-            height: 100vh;
-            display: flex;
-            overflow: hidden;
-        }
-
+        button, input, textarea, select { font: inherit; }
+        button { cursor: pointer; }
+        .app { height: 100vh; display: flex; overflow: hidden; }
         .sidebar {
             width: 275px;
             background: #ededf0;
@@ -56,13 +38,7 @@
             flex-direction: column;
             gap: 14px;
         }
-
-        .brand {
-            font-size: 21px;
-            font-weight: 750;
-            padding: 7px 5px;
-        }
-
+        .brand { font-size: 21px; font-weight: 750; padding: 7px 5px; }
         .new {
             border: 0;
             background: var(--accent);
@@ -71,7 +47,6 @@
             border-radius: 12px;
             font-weight: 650;
         }
-
         .search {
             width: 100%;
             border: 1px solid var(--line);
@@ -80,15 +55,7 @@
             padding: 10px 12px;
             outline: 0;
         }
-
-        .notes {
-            overflow: auto;
-            display: flex;
-            flex-direction: column;
-            gap: 5px;
-            flex: 1;
-        }
-
+        .notes { overflow: auto; display: flex; flex-direction: column; gap: 5px; flex: 1; }
         .note {
             border: 0;
             background: transparent;
@@ -98,33 +65,16 @@
             color: var(--text);
             display: flex;
         }
-
-        .note:hover,
-        .note.active {
-            background: #fff;
-        }
-
-        .note strong,
-        .note small {
+        .note:hover, .note.active { background: #fff; }
+        .note strong, .note small {
             display: block;
             max-width: 220px;
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
         }
-
-        .note small {
-            color: var(--muted);
-            margin-top: 3px;
-        }
-
-        .main {
-            flex: 1;
-            min-width: 0;
-            display: flex;
-            flex-direction: column;
-        }
-
+        .note small { color: var(--muted); margin-top: 3px; }
+        .main { flex: 1; min-width: 0; display: flex; flex-direction: column; }
         .top {
             min-height: 70px;
             border-bottom: 1px solid var(--line);
@@ -135,7 +85,6 @@
             padding: 12px 22px;
             gap: 15px;
         }
-
         .title {
             border: 0;
             background: transparent;
@@ -145,55 +94,28 @@
             min-width: 0;
             flex: 1;
         }
-
-        .actions,
-        .tools,
-        .rehearsal-controls {
+        .actions, .tools, .rehearsal-controls {
             display: flex;
             gap: 8px;
             align-items: center;
             flex-wrap: wrap;
         }
-
-        .btn,
-        .tool,
-        .select,
-        .num {
+        .btn, .tool, .select, .num {
             border: 1px solid var(--line);
             background: var(--panel);
             padding: 9px 12px;
             border-radius: 10px;
             color: var(--text);
         }
-
-        .btn.dark,
-        .tool.primary {
+        .btn.dark, .tool.primary {
             background: var(--accent);
             color: var(--accent-text);
             border-color: var(--accent);
         }
-
-        .btn.danger {
-            color: #c93434;
-        }
-
-        .editor-wrap {
-            flex: 1;
-            overflow: auto;
-        }
-
-        .editor {
-            max-width: 1250px;
-            margin: 35px auto;
-            padding: 0 30px 80px;
-        }
-
-        .meta {
-            color: var(--muted);
-            font-size: 13px;
-            margin-bottom: 18px;
-        }
-
+        .btn.danger { color: #c93434; }
+        .editor-wrap { flex: 1; overflow: auto; }
+        .editor { max-width: 1250px; margin: 35px auto; padding: 0 30px 80px; }
+        .meta { color: var(--muted); font-size: 13px; margin-bottom: 18px; }
         .rehearsal-bar {
             background: var(--panel);
             border: 1px solid var(--line);
@@ -206,18 +128,8 @@
             gap: 10px;
             flex-wrap: wrap;
         }
-
-        .rehearsal-title {
-            font-weight: 750;
-            margin-right: 4px;
-        }
-
-        .rehearsal-status {
-            color: var(--muted);
-            font-size: 12px;
-            margin-left: auto;
-        }
-
+        .rehearsal-title { font-weight: 750; margin-right: 4px; }
+        .rehearsal-status { color: var(--muted); font-size: 12px; margin-left: auto; }
         .song-view {
             background: var(--panel);
             border: 1px solid var(--line);
@@ -225,17 +137,8 @@
             box-shadow: var(--shadow);
             overflow: hidden;
         }
-
-        .big-line {
-            position: relative;
-            border-bottom: 3px solid var(--text);
-            padding-top: 2px;
-        }
-
-        .big-line:last-child {
-            border-bottom: 0;
-        }
-
+        .big-line { position: relative; border-bottom: 3px solid var(--text); padding-top: 2px; }
+        .big-line:last-child { border-bottom: 0; }
         .big-line-number {
             position: absolute;
             right: 12px;
@@ -245,18 +148,8 @@
             font-size: 10px;
             font-weight: 800;
         }
-
-        .lane {
-            position: relative;
-            min-height: 86px;
-            border-bottom: 1px solid var(--line);
-            padding: 13px 18px 12px;
-        }
-
-        .lane:last-child {
-            border-bottom: 0;
-        }
-
+        .lane { position: relative; min-height: 86px; border-bottom: 1px solid var(--line); padding: 13px 18px 12px; }
+        .lane:last-child { border-bottom: 0; }
         .lane-name {
             position: absolute;
             left: 10px;
@@ -268,24 +161,14 @@
             letter-spacing: .09em;
             text-transform: uppercase;
         }
-
         .line-grid {
             margin-left: 62px;
             display: grid;
             grid-template-columns: repeat(8, minmax(0, 1fr));
             min-height: 61px;
         }
-
-        .line-cell {
-            min-width: 0;
-            position: relative;
-            border-left: 1px solid var(--line);
-        }
-
-        .line-cell:first-child {
-            border-left: 0;
-        }
-
+        .line-cell { min-width: 0; position: relative; border-left: 1px solid var(--line); }
+        .line-cell:first-child { border-left: 0; }
         .lyric-cell {
             min-height: 61px;
             display: flex;
@@ -300,35 +183,10 @@
             white-space: nowrap;
             transition: background .12s, transform .12s, box-shadow .12s;
         }
-
-        .lyric-cell.has-word:hover {
-            background: #f0f0f2;
-            border-radius: 8px;
-        }
-
-        .lyric-cell.rehearsal-active {
-            background: var(--active);
-            box-shadow: inset 0 -4px 0 var(--text);
-            transform: translateY(-1px);
-        }
-
-        .future-cell {
-            min-height: 61px;
-        }
-
-        .future-cell::after {
-            content: "";
-            position: absolute;
-            left: 9px;
-            right: 9px;
-            top: 50%;
-            border-top: 1px dashed var(--line);
-        }
-
-        .melody-cell {
-            min-height: 61px;
-        }
-
+        .lyric-cell.has-word:hover { background: #f0f0f2; border-radius: 8px; }
+        .lyric-cell.rehearsal-active { background: var(--active); box-shadow: inset 0 -4px 0 var(--text); transform: translateY(-1px); }
+        .future-cell, .melody-cell { min-height: 61px; }
+        .future-cell::after { content: ""; position: absolute; left: 9px; right: 9px; top: 50%; border-top: 1px dashed var(--line); }
         .melody-note {
             position: absolute;
             left: 50%;
@@ -340,42 +198,11 @@
             transform: translateX(-50%);
             z-index: 3;
         }
-
-        .melody-note::after {
-            content: "";
-            position: absolute;
-            width: 2px;
-            height: 28px;
-            background: var(--text);
-            right: 0;
-            bottom: 7px;
-        }
-
-        .melody-note small {
-            position: absolute;
-            top: -19px;
-            left: -12px;
-            color: var(--muted);
-            font-size: 9px;
-            white-space: nowrap;
-        }
-
-        .melody-note.grid-note {
-            width: 14px;
-            height: 10px;
-        }
-
-        .melody-note.selected-note {
-            outline: 3px solid #999;
-        }
-
-        .editor-tools {
-            display: flex;
-            gap: 8px;
-            align-items: center;
-            margin: 18px 0 10px;
-        }
-
+        .melody-note::after { content: ""; position: absolute; width: 2px; height: 28px; background: var(--text); right: 0; bottom: 7px; }
+        .melody-note small { position: absolute; top: -19px; left: -12px; color: var(--muted); font-size: 9px; white-space: nowrap; }
+        .melody-note.grid-note { width: 14px; height: 10px; }
+        .melody-note.selected-note { outline: 3px solid #999; }
+        .editor-tools { display: flex; gap: 8px; align-items: center; margin: 18px 0 10px; }
         .lyrics {
             width: 100%;
             min-height: 150px;
@@ -390,35 +217,10 @@
             font-family: inherit;
             padding: 15px;
         }
-
-        .status {
-            position: fixed;
-            right: 22px;
-            bottom: 17px;
-            color: var(--muted);
-            font-size: 12px;
-            background: #ffffffdd;
-            padding: 6px 9px;
-            border-radius: 9px;
-        }
-
-        .mobile-menu {
-            display: none;
-        }
-
-        .overlay {
-            position: fixed;
-            inset: 0;
-            z-index: 10;
-            display: none;
-            flex-direction: column;
-            background: var(--bg);
-        }
-
-        .overlay.open {
-            display: flex;
-        }
-
+        .status { position: fixed; right: 22px; bottom: 17px; color: var(--muted); font-size: 12px; background: #ffffffdd; padding: 6px 9px; border-radius: 9px; }
+        .mobile-menu { display: none; }
+        .overlay { position: fixed; inset: 0; z-index: 10; display: none; flex-direction: column; background: var(--bg); }
+        .overlay.open { display: flex; }
         .mtop {
             min-height: 68px;
             border-bottom: 1px solid var(--line);
@@ -429,23 +231,9 @@
             align-items: center;
             gap: 10px;
         }
-
-        .mname {
-            flex: 1;
-            font-size: 18px;
-            font-weight: 750;
-        }
-
-        .workspace {
-            flex: 1;
-            overflow: auto;
-            padding: 18px;
-        }
-
-        .sheet-card,
-        .lyric-card,
-        .grid-card,
-        .keyboard-card {
+        .mname { flex: 1; font-size: 18px; font-weight: 750; }
+        .workspace { flex: 1; overflow: auto; padding: 18px; }
+        .sheet-card, .lyric-card, .grid-card, .keyboard-card {
             max-width: 1250px;
             margin: 0 auto 14px;
             background: #fff;
@@ -453,468 +241,77 @@
             border-radius: 16px;
             box-shadow: var(--shadow);
         }
-
-        .sheet-card {
-            padding: 18px;
-            overflow: auto;
-        }
-
-        .staff {
-            height: 235px;
-            min-width: 850px;
-            position: relative;
-        }
-
-        .stafflines {
-            position: absolute;
-            left: 20px;
-            right: 20px;
-            top: 55px;
-            height: 90px;
-            background: repeating-linear-gradient(
-                to bottom,
-                transparent 0,
-                transparent 17px,
-                #a9a9af 18px,
-                #a9a9af 19px
-            );
-        }
-
-        .clef {
-            position: absolute;
-            left: 30px;
-            top: 57px;
-            font-family: serif;
-            font-size: 78px;
-            line-height: 1;
-        }
-
-        .mbar {
-            position: absolute;
-            top: 55px;
-            height: 90px;
-            border-left: 1px solid #777;
-        }
-
-        .music-note {
-            position: absolute;
-            width: 18px;
-            height: 13px;
-            background: #17171a;
-            border-radius: 50%;
-            transform: translateX(-9px);
-            z-index: 2;
-        }
-
-        .music-note::after {
-            content: "";
-            position: absolute;
-            width: 2px;
-            height: 38px;
-            background: #17171a;
-            right: 0;
-            bottom: 8px;
-        }
-
-        .note-label {
-            position: absolute;
-            top: -25px;
-            left: -12px;
-            color: #555;
-            font-size: 11px;
-            white-space: nowrap;
-        }
-
-        .chord-label {
-            position: absolute;
-            top: 18px;
-            font-size: 13px;
-            font-weight: 700;
-            transform: translateX(-50%);
-            white-space: nowrap;
-        }
-
-        .lyric-card {
-            padding: 16px;
-            overflow: auto;
-        }
-
-        .lyric-row {
-            display: flex;
-            gap: 7px;
-            align-items: flex-end;
-            min-width: max-content;
-            padding: 15px 10px 10px;
-        }
-
-        .word {
-            border: 0;
-            background: #f0f0f2;
-            border-radius: 8px;
-            padding: 8px 9px;
-            color: #222;
-        }
-
-        .word.selected {
-            background: #111;
-            color: #fff;
-        }
-
-        .word.rehearsal-active {
-            background: #111;
-            color: #fff;
-            box-shadow: 0 0 0 3px #bbb;
-        }
-
-        .word small {
-            display: block;
-            margin-top: 4px;
-            color: #888;
-            font-size: 9px;
-        }
-
-        .word.selected small,
-        .word.rehearsal-active small {
-            color: #ccc;
-        }
-
-        .grid-card {
-            padding: 14px;
-            overflow: auto;
-        }
-
-        .grid-head {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            margin-bottom: 12px;
-        }
-
-        .grid-title {
-            font-size: 15px;
-            font-weight: 750;
-        }
-
-        .grid-help {
-            flex: 1;
-            color: var(--muted);
-            font-size: 12px;
-        }
-
-        .grid-scroll {
-            overflow: auto;
-        }
-
-        .step-grid {
-            display: grid;
-            grid-template-columns: 110px repeat(32, 28px);
-            min-width: 1010px;
-            gap: 2px;
-            align-items: center;
-        }
-
-        .grid-label {
-            height: 27px;
-            display: flex;
-            align-items: center;
-            padding-left: 7px;
-            font-size: 11px;
-            font-weight: 650;
-            white-space: nowrap;
-        }
-
-        .step {
-            height: 27px;
-            border: 1px solid var(--line);
-            background: #f7f7f8;
-            border-radius: 5px;
-            padding: 0;
-        }
-
-        .step:hover {
-            background: #e7e7ea;
-        }
-
-        .step.on {
-            background: #17171a;
-            border-color: #17171a;
-        }
-
-        .step.beat {
-            border-left: 2px solid #aaa;
-        }
-
-        .step.playhead {
-            box-shadow: inset 0 0 0 2px #888;
-        }
-
-        .keyboard-card {
-            padding: 14px;
-            overflow: auto;
-        }
-
-        .keyboard {
-            display: flex;
-            height: 150px;
-            min-width: 700px;
-            justify-content: center;
-        }
-
-        .key {
-            position: relative;
-            width: 52px;
-            height: 140px;
-            border: 1px solid #aaa;
-            background: #fff;
-            border-radius: 0 0 7px 7px;
-            display: flex;
-            align-items: flex-end;
-            justify-content: center;
-            padding-bottom: 9px;
-            font-size: 11px;
-        }
-
-        .key.black {
-            width: 32px;
-            height: 88px;
-            background: #18181a;
-            color: white;
-            margin: 0 -16px;
-            z-index: 2;
-            border-color: #111;
-            border-radius: 0 0 5px 5px;
-        }
-
-        .selected-note {
-            outline: 3px solid #aaa;
-        }
-
-        .inspector {
-            position: fixed;
-            right: 20px;
-            bottom: 20px;
-            width: 275px;
-            background: #fff;
-            border: 1px solid var(--line);
-            border-radius: 15px;
-            padding: 14px;
-            box-shadow: 0 15px 50px #0002;
-            display: none;
-            z-index: 20;
-        }
-
-        .inspector.show {
-            display: block;
-        }
-
-        .inspector h3 {
-            margin: 0 0 10px;
-        }
-
-        .field {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin: 9px 0;
-            gap: 8px;
-        }
-
-        .field input,
-        .field select {
-            width: 135px;
-            border: 1px solid var(--line);
-            border-radius: 8px;
-            padding: 7px;
-        }
-
-        .modal {
-            position: fixed;
-            inset: 0;
-            background: #0006;
-            z-index: 50;
-            display: none;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-        }
-
-        .modal.open {
-            display: flex;
-        }
-
-        .modal-card {
-            width: min(470px, 100%);
-            background: var(--panel);
-            border: 1px solid var(--line);
-            border-radius: 20px;
-            padding: 22px;
-            box-shadow: 0 25px 80px #0004;
-        }
-
-        .modal-card h2 {
-            margin: 0 0 7px;
-        }
-
-        .modal-card p {
-            color: var(--muted);
-            font-size: 13px;
-        }
-
-        .modal-actions {
-            display: flex;
-            justify-content: flex-end;
-            gap: 8px;
-            margin-top: 18px;
-        }
-
-        .modal-grid {
-            display: grid;
-            grid-template-columns: 1fr 130px;
-            gap: 10px;
-            align-items: center;
-        }
-
-        .modal-grid label {
-            font-size: 13px;
-        }
-
-        .modal-grid input,
-        .modal-grid select {
-            width: 100%;
-            border: 1px solid var(--line);
-            border-radius: 9px;
-            padding: 9px;
-            background: var(--panel);
-            color: var(--text);
-        }
-
-        .darkmode {
-            --bg: #111113;
-            --panel: #1b1b1e;
-            --text: #f4f4f5;
-            --muted: #a1a1a8;
-            --line: #36363b;
-            --accent: #f4f4f5;
-            --accent-text: #111;
-            --active: #2a2a2e;
-        }
-
-        .darkmode .sidebar {
-            background: #18181b;
-        }
-
-        .darkmode .top,
-        .darkmode .mtop {
-            background: #161619dd;
-        }
-
-        .darkmode .search,
-        .darkmode .btn,
-        .darkmode .tool,
-        .darkmode .select,
-        .darkmode .num,
-        .darkmode .song-view,
-        .darkmode .rehearsal-bar,
-        .darkmode .sheet-card,
-        .darkmode .lyric-card,
-        .darkmode .grid-card,
-        .darkmode .keyboard-card,
-        .darkmode .inspector,
-        .darkmode .modal-card,
-        .darkmode .lyrics {
-            background: #1b1b1e;
-            color: var(--text);
-        }
-
-        .darkmode .lyric-cell.has-word:hover {
-            background: #29292d;
-        }
-
-        .darkmode .music-note,
-        .darkmode .music-note::after,
-        .darkmode .melody-note,
-        .darkmode .melody-note::after {
-            background: #eee;
-        }
-
-        .darkmode .key {
-            background: #ddd;
-            color: #111;
-        }
-
-        .darkmode .key.black {
-            background: #050505;
-            color: #fff;
-        }
-
-        .darkmode .step {
-            background: #242428;
-        }
-
-        .darkmode .step:hover {
-            background: #303035;
-        }
-
-        .darkmode .step.on {
-            background: #eee;
-            border-color: #eee;
-        }
-
+        .sheet-card { padding: 18px; overflow: auto; }
+        .staff { height: 235px; min-width: 850px; position: relative; }
+        .stafflines { position: absolute; left: 20px; right: 20px; top: 55px; height: 90px; background: repeating-linear-gradient(to bottom, transparent 0, transparent 17px, #a9a9af 18px, #a9a9af 19px); }
+        .clef { position: absolute; left: 30px; top: 57px; font-family: serif; font-size: 78px; line-height: 1; }
+        .mbar { position: absolute; top: 55px; height: 90px; border-left: 1px solid #777; }
+        .music-note { position: absolute; width: 18px; height: 13px; background: #17171a; border-radius: 50%; transform: translateX(-9px); z-index: 2; }
+        .music-note::after { content: ""; position: absolute; width: 2px; height: 38px; background: #17171a; right: 0; bottom: 8px; }
+        .note-label { position: absolute; top: -25px; left: -12px; color: #555; font-size: 11px; white-space: nowrap; }
+        .chord-label { position: absolute; top: 18px; font-size: 13px; font-weight: 700; transform: translateX(-50%); white-space: nowrap; }
+        .lyric-card { padding: 16px; overflow: auto; }
+        .lyric-row { display: flex; gap: 7px; align-items: flex-end; min-width: max-content; padding: 15px 10px 10px; }
+        .word { border: 0; background: #f0f0f2; border-radius: 8px; padding: 8px 9px; color: #222; }
+        .word.selected, .word.rehearsal-active { background: #111; color: #fff; }
+        .word.rehearsal-active { box-shadow: 0 0 0 3px #bbb; }
+        .word small { display: block; margin-top: 4px; color: #888; font-size: 9px; }
+        .word.selected small, .word.rehearsal-active small { color: #ccc; }
+        .grid-card { padding: 14px; overflow: auto; }
+        .grid-head { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+        .grid-title { font-size: 15px; font-weight: 750; }
+        .grid-help { flex: 1; color: var(--muted); font-size: 12px; }
+        .grid-scroll { overflow: auto; }
+        .step-grid { display: grid; grid-template-columns: 110px repeat(32, 28px); min-width: 1010px; gap: 2px; align-items: center; }
+        .grid-label { height: 27px; display: flex; align-items: center; padding-left: 7px; font-size: 11px; font-weight: 650; white-space: nowrap; }
+        .step { height: 27px; border: 1px solid var(--line); background: #f7f7f8; border-radius: 5px; padding: 0; }
+        .step:hover { background: #e7e7ea; }
+        .step.on { background: #17171a; border-color: #17171a; }
+        .step.beat { border-left: 2px solid #aaa; }
+        .step.playhead { box-shadow: inset 0 0 0 2px #888; }
+        .keyboard-card { padding: 14px; overflow: auto; }
+        .keyboard { display: flex; height: 150px; min-width: 700px; justify-content: center; }
+        .key { position: relative; width: 52px; height: 140px; border: 1px solid #aaa; background: #fff; border-radius: 0 0 7px 7px; display: flex; align-items: flex-end; justify-content: center; padding-bottom: 9px; font-size: 11px; }
+        .key.black { width: 32px; height: 88px; background: #18181a; color: white; margin: 0 -16px; z-index: 2; border-color: #111; border-radius: 0 0 5px 5px; }
+        .selected-note { outline: 3px solid #aaa; }
+        .inspector { position: fixed; right: 20px; bottom: 20px; width: 275px; background: #fff; border: 1px solid var(--line); border-radius: 15px; padding: 14px; box-shadow: 0 15px 50px #0002; display: none; z-index: 20; }
+        .inspector.show { display: block; }
+        .inspector h3 { margin: 0 0 10px; }
+        .field { display: flex; justify-content: space-between; align-items: center; margin: 9px 0; gap: 8px; }
+        .field input, .field select { width: 135px; border: 1px solid var(--line); border-radius: 8px; padding: 7px; }
+        .modal { position: fixed; inset: 0; background: #0006; z-index: 50; display: none; align-items: center; justify-content: center; padding: 20px; }
+        .modal.open { display: flex; }
+        .modal-card { width: min(470px, 100%); background: var(--panel); border: 1px solid var(--line); border-radius: 20px; padding: 22px; box-shadow: 0 25px 80px #0004; }
+        .modal-card h2 { margin: 0 0 7px; }
+        .modal-card p { color: var(--muted); font-size: 13px; }
+        .modal-actions { display: flex; justify-content: flex-end; gap: 8px; margin-top: 18px; }
+        .modal-grid { display: grid; grid-template-columns: 1fr 130px; gap: 10px; align-items: center; }
+        .modal-grid label { font-size: 13px; }
+        .modal-grid input, .modal-grid select { width: 100%; border: 1px solid var(--line); border-radius: 9px; padding: 9px; background: var(--panel); color: var(--text); }
+        .darkmode { --bg:#111113; --panel:#1b1b1e; --text:#f4f4f5; --muted:#a1a1a8; --line:#36363b; --accent:#f4f4f5; --accent-text:#111; --active:#2a2a2e; }
+        .darkmode .sidebar { background: #18181b; }
+        .darkmode .top, .darkmode .mtop { background: #161619dd; }
+        .darkmode .search, .darkmode .btn, .darkmode .tool, .darkmode .select, .darkmode .num, .darkmode .song-view, .darkmode .rehearsal-bar, .darkmode .sheet-card, .darkmode .lyric-card, .darkmode .grid-card, .darkmode .keyboard-card, .darkmode .inspector, .darkmode .modal-card, .darkmode .lyrics { background:#1b1b1e; color:var(--text); }
+        .darkmode .lyric-cell.has-word:hover { background:#29292d; }
+        .darkmode .music-note, .darkmode .music-note::after, .darkmode .melody-note, .darkmode .melody-note::after { background:#eee; }
+        .darkmode .key { background:#ddd; color:#111; }
+        .darkmode .key.black { background:#050505; color:#fff; }
+        .darkmode .step { background:#242428; }
+        .darkmode .step:hover { background:#303035; }
+        .darkmode .step.on { background:#eee; border-color:#eee; }
         @media (max-width: 760px) {
-            .sidebar {
-                display: none;
-            }
-
-            .mobile-menu {
-                display: block;
-            }
-
-            .editor {
-                margin: 25px auto;
-                padding: 0 12px 70px;
-            }
-
-            .actions .optional {
-                display: none;
-            }
-
-            .inspector {
-                left: 15px;
-                right: 15px;
-                bottom: 15px;
-                width: auto;
-            }
-
-            .top {
-                padding: 10px 13px;
-            }
-
-            .modal-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .line-grid {
-                margin-left: 45px;
-            }
-
-            .lane {
-                padding-left: 10px;
-                padding-right: 10px;
-            }
-
-            .lane-name {
-                left: 4px;
-                font-size: 8px;
-            }
-
-            .lyric-cell {
-                font-size: 14px;
-            }
-
-            .rehearsal-status {
-                width: 100%;
-                margin-left: 0;
-            }
+            .sidebar { display:none; }
+            .mobile-menu { display:block; }
+            .editor { margin:25px auto; padding:0 12px 70px; }
+            .actions .optional { display:none; }
+            .inspector { left:15px; right:15px; bottom:15px; width:auto; }
+            .top { padding:10px 13px; }
+            .modal-grid { grid-template-columns:1fr; }
+            .line-grid { margin-left:45px; }
+            .lane { padding-left:10px; padding-right:10px; }
+            .lane-name { left:4px; font-size:8px; }
+            .lyric-cell { font-size:14px; }
+            .rehearsal-status { width:100%; margin-left:0; }
         }
     </style>
 </head>
@@ -923,37 +320,16 @@
     <div class="app">
         <aside class="sidebar">
             <div class="brand">♪ Lyric Notes</div>
-
             <button class="new" onclick="newSong()">＋ New Song</button>
-
-            <input
-                class="search"
-                id="search"
-                placeholder="Search songs…"
-                oninput="renderSongs()"
-            >
-
+            <input class="search" id="search" placeholder="Search songs…" oninput="renderSongs()">
             <div class="notes" id="songList"></div>
-
             <button class="btn" onclick="toggleTheme()">☾ Appearance</button>
         </aside>
 
         <main class="main">
             <header class="top">
-                <button
-                    class="btn mobile-menu"
-                    onclick="document.querySelector('.sidebar').style.display='flex'"
-                >
-                    ☰
-                </button>
-
-                <input
-                    class="title"
-                    id="title"
-                    placeholder="Untitled Song"
-                    oninput="saveCurrent()"
-                >
-
+                <button class="btn mobile-menu" onclick="document.querySelector('.sidebar').style.display='flex'">☰</button>
+                <input class="title" id="title" placeholder="Untitled Song" oninput="saveCurrent()">
                 <div class="actions">
                     <button class="btn optional" onclick="exportTxt()">Export TXT</button>
                     <button class="btn" onclick="exportProject()">Export Project</button>
@@ -967,48 +343,12 @@
 
                     <div class="rehearsal-bar">
                         <span class="rehearsal-title">Rehearse</span>
-
-                        <button
-                            class="tool primary"
-                            id="normalPlayBtn"
-                            onclick="toggleNormalPlayback()"
-                        >
-                            ▶ Play
-                        </button>
-
-                        <button class="tool" onclick="pauseNormalPlayback()">
-                            Ⅱ Pause
-                        </button>
-
-                        <button class="tool" onclick="stopNormalPlayback()">
-                            ■ Stop
-                        </button>
-
-                        <button
-                            class="tool"
-                            id="normalMetroBtn"
-                            onclick="toggleNormalMetronome()"
-                        >
-                            ♩ Metronome
-                        </button>
-
-                        <label class="tool">
-                            BPM
-                            <input
-                                class="num"
-                                id="normalBpm"
-                                type="number"
-                                min="40"
-                                max="240"
-                                value="100"
-                                style="width:70px"
-                                onchange="changeNormalBpm(this.value)"
-                            >
-                        </label>
-
-                        <span class="rehearsal-status" id="rehearsalStatus">
-                            Ready to rehearse
-                        </span>
+                        <button class="tool primary" id="normalPlayBtn" onclick="toggleNormalPlayback()">▶ Play</button>
+                        <button class="tool" onclick="pauseNormalPlayback()">Ⅱ Pause</button>
+                        <button class="tool" onclick="stopNormalPlayback()">■ Stop</button>
+                        <button class="tool" id="normalMetroBtn" onclick="toggleNormalMetronome()">♩ Metronome</button>
+                        <label class="tool">BPM <input class="num" id="normalBpm" type="number" min="40" max="240" value="100" style="width:70px" onchange="changeNormalBpm(this.value)"></label>
+                        <span class="rehearsal-status" id="rehearsalStatus">Ready to rehearse</span>
                     </div>
 
                     <div class="song-view">
@@ -1017,20 +357,11 @@
 
                     <div class="editor-tools">
                         <strong>Edit lyrics</strong>
-                        <span style="color:var(--muted);font-size:12px">
-                            The words above automatically flow into the song lines.
-                        </span>
+                        <span style="color:var(--muted);font-size:12px">The words above automatically flow into the song lines.</span>
                     </div>
-
-                    <textarea
-                        class="lyrics"
-                        id="lyrics"
-                        placeholder="Start writing your lyrics…"
-                        oninput="saveCurrent()"
-                    ></textarea>
+                    <textarea class="lyrics" id="lyrics" placeholder="Start writing your lyrics…" oninput="saveCurrent()"></textarea>
                 </div>
             </div>
-
             <div class="status" id="status">Saved</div>
         </main>
     </div>
@@ -1039,26 +370,11 @@
         <div class="mtop">
             <button class="btn" onclick="closeMelody()">← Back</button>
             <div class="mname" id="mname">Melody Model</div>
-
             <div class="tools">
                 <button class="tool" id="playBtn" onclick="togglePlayback()">▶ Play</button>
                 <button class="tool" onclick="stopPlayback()">■ Stop</button>
                 <button class="tool" id="metroBtn" onclick="toggleMetronome()">♩ Metronome</button>
-
-                <label class="tool">
-                    BPM
-                    <input
-                        class="num"
-                        id="bpm"
-                        type="number"
-                        min="40"
-                        max="240"
-                        value="100"
-                        style="width:70px"
-                        onchange="saveMelody()"
-                    >
-                </label>
-
+                <label class="tool">BPM <input class="num" id="bpm" type="number" min="40" max="240" value="100" style="width:70px" onchange="saveMelody()"></label>
                 <select class="select" id="instrument" onchange="saveMelody()">
                     <option>Piano</option>
                     <option>Guitar</option>
@@ -1069,7 +385,6 @@
                     <option>Pluck</option>
                     <option>Drums</option>
                 </select>
-
                 <select class="select" id="duration" onchange="setDuration(this.value)">
                     <option value=".25">1/16</option>
                     <option value=".5">1/8</option>
@@ -1078,7 +393,6 @@
                     <option value="4">1</option>
                     <option value="8">2</option>
                 </select>
-
                 <select class="select" id="timeSig" onchange="saveMelody()">
                     <option>4/4</option>
                     <option>3/4</option>
@@ -1089,58 +403,31 @@
         </div>
 
         <div class="workspace">
-            <div class="sheet-card">
-                <div class="staff" id="staff"></div>
-            </div>
-
-            <div class="lyric-card">
-                <div class="lyric-row" id="lyricRow"></div>
-            </div>
+            <div class="sheet-card"><div class="staff" id="staff"></div></div>
+            <div class="lyric-card"><div class="lyric-row" id="lyricRow"></div></div>
 
             <div class="grid-card">
                 <div class="grid-head">
                     <div class="grid-title" id="gridTitle">Instrument Grid</div>
-
-                    <div class="grid-help" id="gridHelp">
-                        Click cells to build a pattern. Each column is a 1/16 step.
-                    </div>
-
-                    <button
-                        class="tool"
-                        id="savePatternBtn"
-                        onclick="openSavePattern()"
-                        style="display:none"
-                    >
-                        Save to Project
-                    </button>
-
+                    <div class="grid-help" id="gridHelp">Click cells to build a pattern. Each column is a 1/16 step.</div>
+                    <button class="tool" id="savePatternBtn" onclick="openSavePattern()">Save to Project</button>
                     <button class="tool" onclick="clearGrid()">Clear</button>
                 </div>
-
-                <div class="grid-scroll">
-                    <div class="step-grid" id="stepGrid"></div>
-                </div>
+                <div class="grid-scroll"><div class="step-grid" id="stepGrid"></div></div>
             </div>
 
-            <div class="keyboard-card">
-                <div class="keyboard" id="keyboard"></div>
-            </div>
+            <div class="keyboard-card"><div class="keyboard" id="keyboard"></div></div>
         </div>
-
         <div class="inspector" id="inspector"></div>
     </div>
 
     <div class="modal" id="savePatternModal">
         <div class="modal-card">
-            <h2>Save piano rhythm to project</h2>
-
-            <p>
-                Choose where this piano rhythm should be inserted into the song's melody.
-            </p>
+            <h2 id="savePatternTitle">Save pattern to project</h2>
+            <p id="savePatternDescription">Choose where this pattern should be inserted into the song.</p>
 
             <div class="modal-grid">
                 <label for="insertMode">Insert position</label>
-
                 <select id="insertMode" onchange="updateInsertBeat()">
                     <option value="end">After existing melody</option>
                     <option value="start">At the beginning</option>
@@ -1148,22 +435,13 @@
                     <option value="custom">Custom beat</option>
                 </select>
 
-                <label id="insertBeatLabel" for="insertBeat">Start beat</label>
-
-                <input
-                    id="insertBeat"
-                    type="number"
-                    min="0"
-                    step=".25"
-                    value="0"
-                >
+                <label id="insertBeatLabel" for="insertBeat">Insertion beat</label>
+                <input id="insertBeat" type="number" min="0" step=".25" value="0">
             </div>
 
             <div class="modal-actions">
                 <button class="btn" onclick="closeSavePattern()">Cancel</button>
-                <button class="btn dark" onclick="savePianoPatternToProject()">
-                    Insert Rhythm
-                </button>
+                <button class="btn dark" onclick="saveGridPatternToProject()">Insert Pattern</button>
             </div>
         </div>
     </div>
@@ -1186,42 +464,26 @@
             "Ride"
         ];
 
-        const MELODY_ROWS = [
-            72,
-            71,
-            70,
-            69,
-            68,
-            67,
-            66,
-            65,
-            64,
-            63,
-            62,
-            61,
-            60
-        ];
+        const MELODY_ROWS = [72, 71, 70, 69, 68, 67, 66, 65, 64, 63, 62, 61, 60];
 
-        let songs = JSON.parse(localStorage.getItem(KEY) || "null") || [
-            {
-                id: crypto.randomUUID(),
-                title: "Untitled Song",
-                lyrics: "",
-                melody: {
-                    events: [],
-                    bpm: 100,
-                    instrument: "Piano",
-                    timeSig: "4/4"
-                }
+        let songs = JSON.parse(localStorage.getItem(KEY) || "null") || [{
+            id: crypto.randomUUID(),
+            title: "Untitled Song",
+            lyrics: "",
+            melody: {
+                events: [],
+                bpm: 100,
+                instrument: "Piano",
+                timeSig: "4/4"
             }
-        ];
+        }];
 
         let current = songs[0].id;
         let selectedWord = -1;
         let selectedEvent = -1;
         let selectedDuration = 1;
-
         let audioContext = null;
+        let noiseBuffer = null;
         let normalPlayback = false;
         let normalPaused = false;
         let normalPlaybackStart = 0;
@@ -1229,15 +491,34 @@
         let normalAnimation = null;
         let normalMetronome = false;
         let normalMetroTimer = null;
-
         let melodyPlayback = false;
         let melodyAnimation = null;
         let melodyMetroTimer = null;
         let metronome = false;
-        let noiseBuffer = null;
 
         function currentSong() {
             return songs.find(song => song.id === current);
+        }
+
+        function ensureMelody() {
+            const song = currentSong();
+            song.melody = song.melody || { events: [], bpm: 100, instrument: "Piano", timeSig: "4/4" };
+            song.melody.events = Array.isArray(song.melody.events) ? song.melody.events : [];
+            return song.melody;
+        }
+
+        function ensureGridData() {
+            const melody = ensureMelody();
+
+            if (!melody.grid) {
+                melody.grid = {
+                    instrument: melody.instrument || "Piano",
+                    steps: []
+                };
+            }
+
+            melody.grid.steps = Array.isArray(melody.grid.steps) ? melody.grid.steps : [];
+            return melody.grid;
         }
 
         function saveAll() {
@@ -1256,18 +537,20 @@
 
         function words() {
             const text = currentSong().lyrics || "";
+            return text.trim() ? text.trim().split(/\s+/) : [];
+        }
 
-            return text.trim()
-                ? text.trim().split(/\s+/)
-                : [];
+        function flashSaved() {
+            const status = document.getElementById("status");
+            status.textContent = "Saved";
+            clearTimeout(window.lyricNotesSaveTimer);
+            window.lyricNotesSaveTimer = setTimeout(() => status.textContent = "", 1200);
         }
 
         function saveCurrent() {
             const song = currentSong();
-
             song.title = document.getElementById("title").value || "Untitled Song";
             song.lyrics = document.getElementById("lyrics").value;
-
             saveAll();
             renderSongs();
             updateMeta();
@@ -1276,31 +559,16 @@
             flashSaved();
         }
 
-        function flashSaved() {
-            const status = document.getElementById("status");
-
-            status.textContent = "Saved";
-            clearTimeout(window.lyricNotesSaveTimer);
-
-            window.lyricNotesSaveTimer = setTimeout(() => {
-                status.textContent = "";
-            }, 1200);
-        }
-
         function updateMeta() {
             const text = document.getElementById("lyrics").value.trim();
             const count = text ? text.split(/\s+/).length : 0;
-
-            document.getElementById("meta").textContent =
-                `${count} words · ${text.length} characters`;
+            document.getElementById("meta").textContent = `${count} words · ${text.length} characters`;
         }
 
         function loadCurrent() {
             const song = currentSong();
-
             document.getElementById("title").value = song.title;
             document.getElementById("lyrics").value = song.lyrics;
-
             updateMeta();
             renderSongs();
             renderSongScore();
@@ -1310,18 +578,13 @@
         function renderSongs() {
             const query = (document.getElementById("search")?.value || "").toLowerCase();
             const box = document.getElementById("songList");
-
-            if (!box) {
-                return;
-            }
-
+            if (!box) return;
             box.innerHTML = "";
 
             songs
                 .filter(song => `${song.title} ${song.lyrics}`.toLowerCase().includes(query))
                 .forEach(song => {
                     const button = document.createElement("button");
-
                     button.className = `note ${song.id === current ? "active" : ""}`;
                     button.onclick = () => {
                         stopNormalPlayback();
@@ -1330,116 +593,66 @@
                         selectedEvent = -1;
                         loadCurrent();
                     };
-
-                    button.innerHTML = `
-                        <span>
-                            <strong>${esc(song.title || "Untitled")}</strong>
-                            <small>${esc(
-                                (song.lyrics || "")
-                                    .replace(/\s+/g, " ")
-                                    .slice(0, 45) || "No lyrics yet"
-                            )}</small>
-                        </span>
-                    `;
-
+                    button.innerHTML = `<span><strong>${esc(song.title || "Untitled")}</strong><small>${esc((song.lyrics || "").replace(/\s+/g, " ").slice(0, 45) || "No lyrics yet")}</small></span>`;
                     box.appendChild(button);
                 });
         }
 
         function newSong() {
             stopNormalPlayback();
-
             const song = {
                 id: crypto.randomUUID(),
                 title: "Untitled Song",
                 lyrics: "",
-                melody: {
-                    events: [],
-                    bpm: 100,
-                    instrument: "Piano",
-                    timeSig: "4/4"
-                }
+                melody: { events: [], bpm: 100, instrument: "Piano", timeSig: "4/4" }
             };
-
             songs.unshift(song);
             current = song.id;
+            selectedWord = -1;
+            selectedEvent = -1;
             saveAll();
             loadCurrent();
-
             document.getElementById("title").focus();
         }
 
         function toggleTheme() {
             document.body.classList.toggle("darkmode");
-            localStorage.setItem(
-                "lnDark",
-                document.body.classList.contains("darkmode")
-            );
+            localStorage.setItem("lnDark", document.body.classList.contains("darkmode"));
         }
 
         if (localStorage.getItem("lnDark") === "true") {
             document.body.classList.add("darkmode");
         }
 
-        function ensureMelody() {
-            const song = currentSong();
-
-            song.melody = song.melody || {
-                events: [],
-                bpm: 100,
-                instrument: "Piano",
-                timeSig: "4/4"
-            };
-
-            song.melody.events = song.melody.events || [];
-
-            return song.melody;
+        function noteName(midi) {
+            if (midi === undefined || midi === null || Number.isNaN(Number(midi))) return "Drum";
+            const names = ["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"];
+            return names[((midi % 12) + 12) % 12] + (Math.floor(midi / 12) - 1);
         }
 
         function renderSongScore() {
             const song = currentSong();
             const lyricWords = words();
             const box = document.getElementById("songScore");
-
-            if (!box) {
-                return;
-            }
-
+            if (!box) return;
             box.innerHTML = "";
 
             const melodyLength = song.melody?.events?.reduce(
-                (max, event) => Math.max(max, event.start + event.duration),
+                (max, event) => Math.max(max, event.start + (event.duration || 0)),
                 0
             ) || 0;
 
-            const totalLines = Math.max(
-                1,
-                Math.ceil(Math.max(lyricWords.length, melodyLength) / LINE_BEATS)
-            );
+            const totalLines = Math.max(1, Math.ceil(Math.max(lyricWords.length, melodyLength) / LINE_BEATS));
 
             for (let line = 0; line < totalLines; line++) {
                 const bigLine = document.createElement("div");
-
                 bigLine.className = "big-line";
                 bigLine.innerHTML = `
                     <div class="big-line-number">${line + 1}</div>
-
-                    <div class="lane">
-                        <div class="lane-name">Lyrics</div>
-                        <div class="line-grid lyric-grid"></div>
-                    </div>
-
-                    <div class="lane">
-                        <div class="lane-name">Future</div>
-                        <div class="line-grid future-grid"></div>
-                    </div>
-
-                    <div class="lane">
-                        <div class="lane-name">Melody</div>
-                        <div class="line-grid melody-grid"></div>
-                    </div>
+                    <div class="lane"><div class="lane-name">Lyrics</div><div class="line-grid lyric-grid"></div></div>
+                    <div class="lane"><div class="lane-name">Future</div><div class="line-grid future-grid"></div></div>
+                    <div class="lane"><div class="lane-name">Melody</div><div class="line-grid melody-grid"></div></div>
                 `;
-
                 box.appendChild(bigLine);
 
                 const lyricGrid = bigLine.querySelector(".lyric-grid");
@@ -1448,7 +661,6 @@
 
                 for (let column = 0; column < 8; column++) {
                     const wordIndex = line * 8 + column;
-
                     const lyricCell = document.createElement("div");
                     lyricCell.className = "line-cell lyric-cell";
 
@@ -1460,79 +672,48 @@
                     }
 
                     lyricGrid.appendChild(lyricCell);
-
                     const futureCell = document.createElement("div");
                     futureCell.className = "line-cell future-cell";
                     futureGrid.appendChild(futureCell);
-
                     const melodyCell = document.createElement("div");
                     melodyCell.className = "line-cell melody-cell";
                     melodyGrid.appendChild(melodyCell);
                 }
 
-                const events = (song.melody?.events || [])
+                (song.melody?.events || [])
                     .map((event, index) => ({ ...event, _index: index }))
-                    .filter(event =>
-                        event.start >= line * LINE_BEATS &&
-                        event.start < (line + 1) * LINE_BEATS
-                    );
+                    .filter(event => event.start >= line * LINE_BEATS && event.start < (line + 1) * LINE_BEATS)
+                    .forEach(event => {
+                        const column = Math.min(7, Math.floor(event.start - line * LINE_BEATS));
+                        const cell = melodyGrid.children[column];
+                        if (!cell) return;
 
-                events.forEach(event => {
-                    const column = Math.min(
-                        7,
-                        Math.floor(event.start - line * LINE_BEATS)
-                    );
-
-                    const cell = melodyGrid.children[column];
-
-                    if (!cell) {
-                        return;
-                    }
-
-                    const note = document.createElement("div");
-                    note.className = `melody-note ${
-                        event.grid ? "grid-note" : ""
-                    } ${event._index === selectedEvent ? "selected-note" : ""}`;
-
-                    note.title = `${noteName(event.pitch)} · beat ${event.start}`;
-                    note.innerHTML = `<small>${noteName(event.pitch)}</small>`;
-
-                    note.onclick = () => {
-                        selectedEvent = event._index;
-                        selectedWord = event.word ?? -1;
-                        openMelody();
-                        showInspector();
-                    };
-
-                    cell.appendChild(note);
-                });
+                        const note = document.createElement("div");
+                        note.className = `melody-note ${event.grid ? "grid-note" : ""} ${event._index === selectedEvent ? "selected-note" : ""}`;
+                        note.title = event.drum ? `${event.drum} · beat ${event.start}` : `${noteName(event.pitch)} · beat ${event.start}`;
+                        note.innerHTML = `<small>${event.drum || noteName(event.pitch)}</small>`;
+                        note.onclick = () => {
+                            selectedEvent = event._index;
+                            selectedWord = event.word ?? -1;
+                            openMelody();
+                            showInspector();
+                        };
+                        cell.appendChild(note);
+                    });
             }
         }
 
         function clearRehearsalHighlight() {
-            document.querySelectorAll(".lyric-cell.rehearsal-active").forEach(cell => {
-                cell.classList.remove("rehearsal-active");
-            });
+            document.querySelectorAll(".lyric-cell.rehearsal-active, .word.rehearsal-active").forEach(cell => cell.classList.remove("rehearsal-active"));
         }
 
         function highlightRehearsalWord(index) {
             clearRehearsalHighlight();
-
-            if (index < 0) {
-                return;
-            }
-
-            const cell = document.querySelector(
-                `.lyric-cell[data-word-index="${index}"]`
-            );
-
+            if (index < 0) return;
+            const cell = document.querySelector(`.lyric-cell[data-word-index="${index}"]`);
             if (cell) {
                 cell.classList.add("rehearsal-active");
-                cell.scrollIntoView({
-                    behavior: "smooth",
-                    block: "center",
-                    inline: "center"
-                });
+                cell.scrollIntoView({ behavior: "smooth", block: "center", inline: "center" });
             }
         }
 
@@ -1543,9 +724,7 @@
                 .filter(event => !event.rest)
                 .sort((a, b) => a.start - b.start);
 
-            if (events.length) {
-                return events;
-            }
+            if (events.length) return events;
 
             return lyricWords.map((word, index) => ({
                 word: index,
@@ -1557,35 +736,23 @@
         }
 
         function rehearsalEndBeat() {
-            const events = rehearsalEvents();
-
-            return Math.max(
-                1,
-                ...events.map(event => event.start + event.duration)
-            );
+            return Math.max(1, ...rehearsalEvents().map(event => event.start + (event.duration || 0)));
         }
 
         function updateRehearsalBpm() {
-            const bpm = currentSong().melody?.bpm || 100;
-            document.getElementById("normalBpm").value = bpm;
+            document.getElementById("normalBpm").value = currentSong().melody?.bpm || 100;
         }
 
         function changeNormalBpm(value) {
-            const song = currentSong();
             const bpm = Math.max(40, Math.min(240, Number(value) || 100));
-
             ensureMelody().bpm = bpm;
             document.getElementById("normalBpm").value = bpm;
             saveAll();
         }
 
         function toggleNormalPlayback() {
-            if (normalPlayback) {
-                pauseNormalPlayback();
-                return;
-            }
-
-            startNormalPlayback();
+            if (normalPlayback) pauseNormalPlayback();
+            else startNormalPlayback();
         }
 
         function startNormalPlayback() {
@@ -1602,71 +769,47 @@
             }
 
             stopNormalPlayback(false);
-
             const bpm = Number(document.getElementById("normalBpm").value) || 100;
-            const events = rehearsalEvents();
             const secondsPerBeat = 60 / bpm;
+            const events = rehearsalEvents();
 
             normalPlayback = true;
-            normalPaused = false;
             normalPlaybackStart = performance.now();
             normalPausedAt = 0;
 
             events.forEach(event => {
-                if (event.rehearsalOnly) {
-                    return;
-                }
-
-                const when = event.start * secondsPerBeat;
-                const duration = Math.max(0.08, event.duration * secondsPerBeat);
-
-                if (event.grid) {
-                    playGridEventAt(event, when, duration);
-                } else {
-                    playTone(event.pitch, duration, when);
-                }
+                if (event.rehearsalOnly) return;
+                scheduleProjectEvent(event, event.start * secondsPerBeat, Math.max(0.08, (event.duration || 0.25) * secondsPerBeat));
             });
 
-            if (normalMetronome) {
-                startNormalMetronome();
-            }
-
+            if (normalMetronome) startNormalMetronome();
             updateNormalPlaybackButton();
             requestNormalPlaybackFrame();
+        }
+
+        function scheduleProjectEvent(event, when, duration) {
+            if (event.drum) {
+                playDrum(event.drum, Math.min(0.8, duration), when);
+                return;
+            }
+
+            playTone(event.pitch, duration, when, event.instrument || currentSong().melody.instrument);
         }
 
         function requestNormalPlaybackFrame() {
             cancelAnimationFrame(normalAnimation);
 
             function frame() {
-                if (!normalPlayback) {
-                    return;
-                }
+                if (!normalPlayback) return;
 
                 const bpm = Number(document.getElementById("normalBpm").value) || 100;
                 const secondsPerBeat = 60 / bpm;
-                const elapsedSeconds = (performance.now() - normalPlaybackStart) / 1000;
-                const beat = elapsedSeconds / secondsPerBeat;
-                const events = rehearsalEvents();
-
-                let activeWord = -1;
-
-                for (const event of events) {
-                    if (
-                        beat >= event.start &&
-                        beat < event.start + event.duration
-                    ) {
-                        activeWord = event.word ?? -1;
-                        break;
-                    }
-                }
+                const beat = ((performance.now() - normalPlaybackStart) / 1000) / secondsPerBeat;
+                const event = rehearsalEvents().find(item => beat >= item.start && beat < item.start + (item.duration || 0));
+                const activeWord = event?.word ?? -1;
 
                 highlightRehearsalWord(activeWord);
-
-                document.getElementById("rehearsalStatus").textContent =
-                    activeWord >= 0
-                        ? `Rehearsing: ${words()[activeWord] || ""}`
-                        : `Beat ${Math.floor(beat) + 1}`;
+                document.getElementById("rehearsalStatus").textContent = activeWord >= 0 ? `Rehearsing: ${words()[activeWord] || ""}` : `Beat ${Math.floor(beat) + 1}`;
 
                 if (beat >= rehearsalEndBeat()) {
                     stopNormalPlayback();
@@ -1680,92 +823,51 @@
         }
 
         function pauseNormalPlayback() {
-            if (!normalPlayback) {
-                return;
-            }
-
-            const bpm = Number(document.getElementById("normalBpm").value) || 100;
-            const secondsPerBeat = 60 / bpm;
-
+            if (!normalPlayback) return;
             normalPausedAt = performance.now() - normalPlaybackStart;
             normalPlayback = false;
             normalPaused = true;
-
             cancelAnimationFrame(normalAnimation);
             stopNormalMetronome();
-
-            if (audioContext) {
-                audioContext.suspend();
-            }
-
+            if (audioContext) audioContext.suspend();
             updateNormalPlaybackButton();
-            document.getElementById("rehearsalStatus").textContent =
-                `Paused at beat ${(normalPausedAt / 1000 / secondsPerBeat).toFixed(2)}`;
+            document.getElementById("rehearsalStatus").textContent = `Paused at ${((normalPausedAt / 1000) / (60 / (Number(document.getElementById("normalBpm").value) || 100))).toFixed(2)} beats`;
         }
 
         function stopNormalPlayback(reset = true) {
             normalPlayback = false;
             normalPaused = false;
             normalPausedAt = 0;
-
             cancelAnimationFrame(normalAnimation);
             stopNormalMetronome();
-
-            if (audioContext && audioContext.state === "suspended") {
-                audioContext.resume();
-            }
-
+            if (audioContext && audioContext.state === "suspended") audioContext.resume();
             if (reset) {
                 clearRehearsalHighlight();
-                document.getElementById("rehearsalStatus").textContent =
-                    "Ready to rehearse";
+                document.getElementById("rehearsalStatus").textContent = "Ready to rehearse";
             }
-
             updateNormalPlaybackButton();
         }
 
         function updateNormalPlaybackButton() {
             const button = document.getElementById("normalPlayBtn");
-
-            if (normalPlayback) {
-                button.textContent = "Ⅱ Pause";
-            } else if (normalPaused) {
-                button.textContent = "▶ Resume";
-            } else {
-                button.textContent = "▶ Play";
-            }
+            button.textContent = normalPlayback ? "Ⅱ Pause" : normalPaused ? "▶ Resume" : "▶ Play";
         }
 
         function toggleNormalMetronome() {
             normalMetronome = !normalMetronome;
-
-            document.getElementById("normalMetroBtn").classList.toggle(
-                "primary",
-                normalMetronome
-            );
-
-            if (normalMetronome && normalPlayback) {
-                startNormalMetronome();
-            } else {
-                stopNormalMetronome();
-            }
+            document.getElementById("normalMetroBtn").classList.toggle("primary", normalMetronome);
+            if (normalMetronome && normalPlayback) startNormalMetronome();
+            else stopNormalMetronome();
         }
 
         function startNormalMetronome() {
             stopNormalMetronome();
-
-            const bpm = Number(document.getElementById("normalBpm").value) || 100;
-            const interval = 60000 / bpm;
-
+            const interval = 60000 / (Number(document.getElementById("normalBpm").value) || 100);
             function click() {
-                if (!normalMetronome || !normalPlayback) {
-                    return;
-                }
-
-                playTone(84, 0.055);
+                if (!normalMetronome || !normalPlayback) return;
+                playTone(84, 0.055, 0, "Piano");
                 normalMetroTimer = setTimeout(click, interval);
             }
-
             click();
         }
 
@@ -1776,13 +878,11 @@
 
         function openMelody() {
             const melody = ensureMelody();
-
             document.getElementById("melody").classList.add("open");
             document.getElementById("mname").textContent = currentSong().title;
             document.getElementById("bpm").value = melody.bpm;
             document.getElementById("instrument").value = melody.instrument || "Piano";
             document.getElementById("timeSig").value = melody.timeSig || "4/4";
-
             renderMelody();
             renderGrid();
             renderKeyboard();
@@ -1796,39 +896,14 @@
 
         function saveMelody() {
             const melody = ensureMelody();
-
-            melody.bpm = Math.max(
-                40,
-                Math.min(240, Number(document.getElementById("bpm").value) || 100)
-            );
-
+            melody.bpm = Math.max(40, Math.min(240, Number(document.getElementById("bpm").value) || 100));
             melody.instrument = document.getElementById("instrument").value;
             melody.timeSig = document.getElementById("timeSig").value;
-
             saveAll();
             updateRehearsalBpm();
             renderMelody();
             renderGrid();
             renderSongScore();
-        }
-
-        function noteName(midi) {
-            const names = [
-                "C",
-                "C#",
-                "D",
-                "D#",
-                "E",
-                "F",
-                "F#",
-                "G",
-                "G#",
-                "A",
-                "A#",
-                "B"
-            ];
-
-            return names[((midi % 12) + 12) % 12] + (Math.floor(midi / 12) - 1);
         }
 
         function pitchY(midi) {
@@ -1841,46 +916,28 @@
             const staff = document.getElementById("staff");
             const row = document.getElementById("lyricRow");
 
-            staff.innerHTML = `
-                <div class="stafflines"></div>
-                <div class="clef">𝄞</div>
-            `;
-
+            staff.innerHTML = '<div class="stafflines"></div><div class="clef">𝄞</div>';
             row.innerHTML = "";
 
             lyricWords.forEach((word, index) => {
                 const button = document.createElement("button");
-                const event = song.melody.events.find(
-                    melodyEvent => melodyEvent.word === index && !melodyEvent.grid
-                );
-
+                const event = song.melody.events.find(item => item.word === index && !item.grid && !item.drum);
                 button.className = `word ${index === selectedWord ? "selected" : ""}`;
-                button.innerHTML = esc(word) +
-                    `<small>${event ? noteName(event.pitch) : "—"}</small>`;
-
+                button.innerHTML = esc(word) + `<small>${event ? noteName(event.pitch) : "—"}</small>`;
                 button.onclick = () => {
                     selectedWord = index;
                     selectedEvent = -1;
                     renderMelody();
                     showInspector();
                 };
-
                 row.appendChild(button);
             });
 
-            const maxBeat = Math.max(
-                16,
-                song.melody.events.reduce(
-                    (max, event) => Math.max(max, event.start + event.duration),
-                    0
-                ) + 4
-            );
-
+            const maxBeat = Math.max(16, song.melody.events.reduce((max, event) => Math.max(max, event.start + (event.duration || 0)), 0) + 4);
             staff.style.width = Math.max(850, maxBeat * 62 + 100) + "px";
 
             for (let beat = 0; beat <= maxBeat; beat += 4) {
                 const bar = document.createElement("div");
-
                 bar.className = "mbar";
                 bar.style.left = 75 + beat * 62 + "px";
                 staff.appendChild(bar);
@@ -1889,30 +946,20 @@
             song.melody.events.forEach((event, index) => {
                 const x = 75 + event.start * 62;
                 const note = document.createElement("div");
-
-                note.className = `music-note ${
-                    index === selectedEvent ? "selected-note" : ""
-                }`;
-
+                note.className = `music-note ${index === selectedEvent ? "selected-note" : ""}`;
                 note.style.left = x + "px";
-                note.style.top = pitchY(event.pitch) + "px";
-
+                note.style.top = pitchY(event.pitch || 60) + "px";
                 note.onclick = () => {
                     selectedEvent = index;
                     selectedWord = event.word ?? -1;
                     renderMelody();
                     showInspector();
                 };
-
-                note.innerHTML = event.rest
-                    ? "<span class=\"rest-mark\">𝄽</span>"
-                    : `<span class="note-label">${noteName(event.pitch)}</span>`;
-
+                note.innerHTML = event.rest ? "<span>𝄽</span>" : `<span class="note-label">${event.drum || noteName(event.pitch)}</span>`;
                 staff.appendChild(note);
 
                 if (event.chord) {
                     const chord = document.createElement("div");
-
                     chord.className = "chord-label";
                     chord.style.left = x + "px";
                     chord.textContent = event.chord;
@@ -1930,69 +977,25 @@
                     box.classList.remove("show");
                     return;
                 }
-
                 box.className = "inspector show";
-                box.innerHTML = `
-                    <h3>${esc(words()[selectedWord])}</h3>
-                    <p style="color:var(--muted);font-size:13px">
-                        Choose a piano key to assign a note.
-                    </p>
-                    <button class="btn" onclick="addRest()">Add Rest</button>
-                `;
+                box.innerHTML = `<h3>${esc(words()[selectedWord])}</h3><p style="color:var(--muted);font-size:13px">Choose a piano key to assign a note.</p><button class="btn" onclick="addRest()">Add Rest</button>`;
                 return;
             }
 
             const event = song.melody.events[selectedEvent];
-
             box.className = "inspector show";
             box.innerHTML = `
-                <h3>${event.grid ? "Piano rhythm" : "Note"} ${noteName(event.pitch)}</h3>
-
-                <div class="field">
-                    Timing
-                    <input
-                        type="number"
-                        step=".25"
-                        min="0"
-                        value="${event.start}"
-                        onchange="editEvent('start', this.value)"
-                    >
-                </div>
-
-                <div class="field">
-                    Duration
-                    <select onchange="editEvent('duration', this.value)">
-                        ${[.25, .5, 1, 2, 4, 8].map(value => `
-                            <option
-                                value="${value}"
-                                ${event.duration == value ? "selected" : ""}
-                            >
-                                ${value} beat${value == 1 ? "" : "s"}
-                            </option>
-                        `).join("")}
-                    </select>
-                </div>
-
-                <div class="field">
-                    Chord
-                    <input
-                        value="${esc(event.chord || "")}"
-                        placeholder="e.g. Cmaj7"
-                        onchange="editEvent('chord', this.value)"
-                    >
-                </div>
-
-                <button class="btn danger" onclick="deleteEvent()">
-                    Delete note
-                </button>
+                <h3>${event.drum ? esc(event.drum) : `Note ${noteName(event.pitch)}`}</h3>
+                <div class="field">Timing <input type="number" step=".25" min="0" value="${event.start}" onchange="editEvent('start', this.value)"></div>
+                <div class="field">Duration <select onchange="editEvent('duration', this.value)">${[.25,.5,1,2,4,8].map(value => `<option value="${value}" ${event.duration == value ? "selected" : ""}>${value} beat${value == 1 ? "" : "s"}</option>`).join("")}</select></div>
+                <div class="field">Chord <input value="${esc(event.chord || "")}" placeholder="e.g. Cmaj7" onchange="editEvent('chord', this.value)"></div>
+                <button class="btn danger" onclick="deleteEvent()">Delete event</button>
             `;
         }
 
         function editEvent(key, value) {
             const event = currentSong().melody.events[selectedEvent];
-
             event[key] = key === "chord" ? value : Number(value);
-
             saveMelody();
             showInspector();
         }
@@ -2000,27 +1003,9 @@
         function deleteEvent() {
             currentSong().melody.events.splice(selectedEvent, 1);
             selectedEvent = -1;
-
             saveMelody();
             renderMelody();
             showInspector();
-        }
-
-        function ensureGridData() {
-            const melody = ensureMelody();
-
-            if (!melody.grid) {
-                melody.grid = {
-                    instrument: melody.instrument,
-                    steps: []
-                };
-            }
-
-            if (!Array.isArray(melody.grid.steps)) {
-                melody.grid.steps = [];
-            }
-
-            return melody.grid;
         }
 
         function gridIsDrum() {
@@ -2032,47 +1017,33 @@
             const box = document.getElementById("stepGrid");
             const instrument = document.getElementById("instrument").value;
             const drums = instrument === "Drums";
-
             grid.instrument = instrument;
 
-            document.getElementById("gridTitle").textContent =
-                drums ? "Drum Pattern" : `${instrument} Pattern`;
-
+            document.getElementById("gridTitle").textContent = drums ? "Drum Pattern" : `${instrument} Pattern`;
             document.getElementById("gridHelp").textContent = drums
-                ? "Click cells to build a drum beat. Each column is a 1/16 step."
-                : "Click cells to build a rhythm. Each column is a 1/16 step.";
+                ? "Click cells to build a drum beat. Each column is a 1/16 step. Save it directly into the project."
+                : `Click cells to build a ${instrument.toLowerCase()} pattern. Each column is a 1/16 step. Save it directly into the project.`;
 
-            document.getElementById("savePatternBtn").style.display =
-                instrument === "Piano" && grid.steps.length
-                    ? "inline-block"
-                    : "none";
+            const saveButton = document.getElementById("savePatternBtn");
+            saveButton.style.display = grid.steps.length ? "inline-block" : "none";
+            saveButton.textContent = drums ? "Save Drum Beat to Project" : `Save ${instrument} Pattern to Project`;
 
             box.innerHTML = "";
-
             const rows = drums ? DRUM_ROWS : MELODY_ROWS;
 
             rows.forEach((row, rowIndex) => {
                 const label = document.createElement("div");
-
                 label.className = "grid-label";
                 label.textContent = drums ? row : noteName(row);
                 box.appendChild(label);
 
                 for (let step = 0; step < GRID_STEPS; step++) {
                     const button = document.createElement("button");
-                    const key = drums
-                        ? `${rowIndex}:${step}`
-                        : `${row}:${step}`;
-
+                    const key = drums ? `${rowIndex}:${step}` : `${row}:${step}`;
                     button.className = `step ${step % 4 === 0 ? "beat" : ""}`;
-
-                    if (grid.steps.includes(key)) {
-                        button.classList.add("on");
-                    }
-
+                    if (grid.steps.includes(key)) button.classList.add("on");
                     button.dataset.step = step;
                     button.onclick = () => toggleGridCell(key);
-
                     box.appendChild(button);
                 }
             });
@@ -2084,22 +1055,15 @@
             const grid = ensureGridData();
             const index = grid.steps.indexOf(key);
 
-            if (index >= 0) {
-                grid.steps.splice(index, 1);
-            } else {
-                grid.steps.push(key);
-            }
+            if (index >= 0) grid.steps.splice(index, 1);
+            else grid.steps.push(key);
 
             saveAll();
             renderGrid();
 
             const [value] = key.split(":").map(Number);
-
-            if (gridIsDrum()) {
-                playDrum(DRUM_ROWS[value]);
-            } else {
-                playTone(value, 0.16);
-            }
+            if (gridIsDrum()) playDrum(DRUM_ROWS[value]);
+            else playTone(value, 0.16, 0, document.getElementById("instrument").value);
         }
 
         function clearGrid() {
@@ -2109,10 +1073,16 @@
         }
 
         function openSavePattern() {
-            if (!ensureGridData().steps.length) {
-                return;
-            }
+            const grid = ensureGridData();
+            if (!grid.steps.length) return;
 
+            const instrument = document.getElementById("instrument").value;
+            document.getElementById("savePatternTitle").textContent = instrument === "Drums"
+                ? "Save drum beat to project"
+                : `Save ${instrument} pattern to project`;
+            document.getElementById("savePatternDescription").textContent = instrument === "Drums"
+                ? "Choose where these drum hits should be inserted. The drum sounds will be stored with the song."
+                : `Choose where this ${instrument.toLowerCase()} pattern should be inserted. The instrument will be stored with the notes.`;
             document.getElementById("insertMode").value = "end";
             updateInsertBeat();
             document.getElementById("savePatternModal").classList.add("open");
@@ -2124,64 +1094,59 @@
 
         function updateInsertBeat() {
             const mode = document.getElementById("insertMode").value;
-            const events = currentSong().melody.events;
+            const events = ensureMelody().events;
             let beat = 0;
 
             if (mode === "end") {
-                beat = events.reduce(
-                    (max, event) => Math.max(max, event.start + event.duration),
-                    0
-                );
-            }
-
-            if (mode === "selected" && selectedEvent >= 0) {
+                beat = events.reduce((max, event) => Math.max(max, event.start + (event.duration || 0)), 0);
+            } else if (mode === "selected" && selectedEvent >= 0) {
                 beat = events[selectedEvent].start;
-            }
-
-            if (mode === "custom") {
+            } else if (mode === "custom") {
                 beat = Number(document.getElementById("insertBeat").value) || 0;
             }
 
             document.getElementById("insertBeat").value = beat;
             document.getElementById("insertBeat").disabled = mode !== "custom";
-            document.getElementById("insertBeatLabel").textContent =
-                mode === "custom" ? "Start beat" : "Insertion beat";
+            document.getElementById("insertBeatLabel").textContent = mode === "custom" ? "Start beat" : "Insertion beat";
         }
 
-        function savePianoPatternToProject() {
+        function saveGridPatternToProject() {
             const grid = ensureGridData();
-            const events = currentSong().melody.events;
+            const melody = ensureMelody();
             const mode = document.getElementById("insertMode").value;
+            const instrument = document.getElementById("instrument").value;
             let start = 0;
 
             if (mode === "end") {
-                start = events.reduce(
-                    (max, event) => Math.max(max, event.start + event.duration),
-                    0
-                );
+                start = melody.events.reduce((max, event) => Math.max(max, event.start + (event.duration || 0)), 0);
             } else if (mode === "selected" && selectedEvent >= 0) {
-                start = events[selectedEvent].start;
+                start = melody.events[selectedEvent].start;
             } else if (mode === "custom") {
-                start = Math.max(
-                    0,
-                    Number(document.getElementById("insertBeat").value) || 0
-                );
+                start = Math.max(0, Number(document.getElementById("insertBeat").value) || 0);
             }
 
             grid.steps.forEach(key => {
-                const [pitch, step] = key.split(":").map(Number);
-
-                events.push({
+                const [value, step] = key.split(":").map(Number);
+                const event = {
                     word: -1,
-                    pitch,
                     start: start + step * 0.25,
                     duration: 0.25,
                     grid: true,
-                    chord: ""
-                });
+                    chord: "",
+                    instrument
+                };
+
+                if (instrument === "Drums") {
+                    event.drum = DRUM_ROWS[value];
+                    event.pitch = 60;
+                } else {
+                    event.pitch = value;
+                }
+
+                melody.events.push(event);
             });
 
-            events.sort((a, b) => a.start - b.start);
+            melody.events.sort((a, b) => a.start - b.start);
             saveAll();
             closeSavePattern();
             renderMelody();
@@ -2190,36 +1155,17 @@
         }
 
         function ensureAudio() {
-            if (!audioContext) {
-                audioContext = new (
-                    window.AudioContext || window.webkitAudioContext
-                )();
-            }
-
-            if (audioContext.state === "suspended") {
-                audioContext.resume();
-            }
+            if (!audioContext) audioContext = new (window.AudioContext || window.webkitAudioContext)();
+            if (audioContext.state === "suspended") audioContext.resume();
         }
 
         function getNoiseBuffer() {
             ensureAudio();
-
-            if (noiseBuffer) {
-                return noiseBuffer;
-            }
-
+            if (noiseBuffer) return noiseBuffer;
             const length = Math.floor(audioContext.sampleRate * 2);
-            const buffer = audioContext.createBuffer(
-                1,
-                length,
-                audioContext.sampleRate
-            );
+            const buffer = audioContext.createBuffer(1, length, audioContext.sampleRate);
             const data = buffer.getChannelData(0);
-
-            for (let i = 0; i < length; i++) {
-                data[i] = Math.random() * 2 - 1;
-            }
-
+            for (let i = 0; i < length; i++) data[i] = Math.random() * 2 - 1;
             noiseBuffer = buffer;
             return buffer;
         }
@@ -2228,16 +1174,13 @@
             const source = audioContext.createBufferSource();
             const filter = audioContext.createBiquadFilter();
             const gain = audioContext.createGain();
-
             source.buffer = getNoiseBuffer();
             filter.type = filterType;
             filter.frequency.setValueAtTime(frequency, time);
             filter.Q.value = q;
-
             gain.gain.setValueAtTime(0.0001, time);
             gain.gain.exponentialRampToValueAtTime(volume, time + 0.002);
             gain.gain.exponentialRampToValueAtTime(0.0001, time + duration);
-
             source.connect(filter).connect(gain).connect(audioContext.destination);
             source.start(time);
             source.stop(time + duration + 0.03);
@@ -2246,18 +1189,12 @@
         function oscHit(type, time, firstFrequency, lastFrequency, duration, volume) {
             const oscillator = audioContext.createOscillator();
             const gain = audioContext.createGain();
-
             oscillator.type = type;
             oscillator.frequency.setValueAtTime(firstFrequency, time);
-            oscillator.frequency.exponentialRampToValueAtTime(
-                Math.max(20, lastFrequency),
-                time + Math.min(0.12, duration)
-            );
-
+            oscillator.frequency.exponentialRampToValueAtTime(Math.max(20, lastFrequency), time + Math.min(0.12, duration));
             gain.gain.setValueAtTime(0.0001, time);
             gain.gain.exponentialRampToValueAtTime(volume, time + 0.002);
             gain.gain.exponentialRampToValueAtTime(0.0001, time + duration);
-
             oscillator.connect(gain).connect(audioContext.destination);
             oscillator.start(time);
             oscillator.stop(time + duration + 0.03);
@@ -2265,7 +1202,6 @@
 
         function playDrum(name, duration = 0.12, when = 0) {
             ensureAudio();
-
             const time = audioContext.currentTime + when;
 
             switch (name) {
@@ -2273,43 +1209,34 @@
                     oscHit("sine", time, 150, 43, Math.max(0.2, duration + 0.1), 0.8);
                     oscHit("triangle", time, 70, 38, 0.09, 0.16);
                     break;
-
                 case "Snare":
                     noiseHit(time, 0.16, 0.31, "highpass", 1500, 1);
                     oscHit("triangle", time, 185, 105, 0.12, 0.16);
                     break;
-
                 case "Closed Hat":
                     noiseHit(time, 0.045, 0.18, "highpass", 7200, 0.7);
                     break;
-
                 case "Open Hat":
                     noiseHit(time, 0.28, 0.16, "highpass", 6200, 0.65);
                     break;
-
                 case "Clap":
                     noiseHit(time, 0.035, 0.25, "bandpass", 1800, 0.8);
                     noiseHit(time + 0.018, 0.055, 0.2, "bandpass", 1500, 0.9);
                     noiseHit(time + 0.045, 0.09, 0.14, "bandpass", 1300, 1);
                     break;
-
                 case "Low Tom":
                     oscHit("sine", time, 155, 75, 0.28, 0.42);
                     break;
-
                 case "Mid Tom":
                     oscHit("sine", time, 205, 105, 0.24, 0.36);
                     break;
-
                 case "High Tom":
                     oscHit("sine", time, 275, 145, 0.2, 0.32);
                     break;
-
                 case "Crash":
                     noiseHit(time, 0.8, 0.22, "highpass", 4300, 0.55);
                     noiseHit(time + 0.02, 0.5, 0.11, "bandpass", 7600, 0.5);
                     break;
-
                 case "Ride":
                     noiseHit(time, 0.38, 0.13, "highpass", 5200, 0.7);
                     oscHit("sine", time, 420, 380, 0.25, 0.06);
@@ -2317,17 +1244,12 @@
             }
         }
 
-        function playTone(midi, duration = 0.5, when = 0) {
+        function playTone(midi, duration = 0.5, when = 0, instrumentOverride = null) {
             ensureAudio();
-
-            const instrument = document.getElementById("instrument")?.value ||
-                currentSong().melody?.instrument ||
-                "Piano";
-
+            const instrument = instrumentOverride || document.getElementById("instrument")?.value || currentSong().melody?.instrument || "Piano";
             const oscillator = audioContext.createOscillator();
             const gain = audioContext.createGain();
             const time = audioContext.currentTime + when;
-
             const types = {
                 Piano: "triangle",
                 Guitar: "triangle",
@@ -2337,77 +1259,50 @@
                 Synth: "square",
                 Pluck: "triangle"
             };
-
             oscillator.type = types[instrument] || "triangle";
             oscillator.frequency.value = 440 * Math.pow(2, (midi - 69) / 12);
-
             gain.gain.setValueAtTime(0.0001, time);
-            gain.gain.exponentialRampToValueAtTime(
-                instrument === "Piano" ? 0.24 : 0.2,
-                time + 0.012
-            );
+            gain.gain.exponentialRampToValueAtTime(instrument === "Piano" ? 0.24 : 0.2, time + 0.012);
             gain.gain.exponentialRampToValueAtTime(0.0001, time + duration);
-
             oscillator.connect(gain).connect(audioContext.destination);
             oscillator.start(time);
             oscillator.stop(time + duration + 0.03);
         }
 
-        function playGridEventAt(event, when, duration) {
-            const instrument = currentSong().melody.instrument;
-
-            if (instrument === "Drums") {
-                return;
-            }
-
-            playTone(event.pitch, duration, when);
+        function playProjectEvent(event, when, duration) {
+            if (event.drum) playDrum(event.drum, Math.min(0.8, duration), when);
+            else playTone(event.pitch, duration, when, event.instrument || currentSong().melody.instrument);
         }
 
         function playGridPattern() {
             const grid = ensureGridData();
             const secondsPerStep = 60 / currentSong().melody.bpm / 4;
+            const instrument = grid.instrument || currentSong().melody.instrument;
 
             grid.steps.forEach(key => {
                 const [value, step] = key.split(":").map(Number);
-
-                if (gridIsDrum()) {
+                if (instrument === "Drums") {
                     playDrum(DRUM_ROWS[value], 0.12, step * secondsPerStep);
                 } else {
-                    playTone(
-                        value,
-                        Math.min(0.22, secondsPerStep * 0.85),
-                        step * secondsPerStep
-                    );
+                    playTone(value, Math.min(0.22, secondsPerStep * 0.85), step * secondsPerStep, instrument);
                 }
             });
         }
 
         function highlightGridStep(step) {
-            document.querySelectorAll("#stepGrid .step").forEach(cell => {
-                cell.classList.toggle(
-                    "playhead",
-                    Number(cell.dataset.step) === step
-                );
-            });
+            document.querySelectorAll("#stepGrid .step").forEach(cell => cell.classList.toggle("playhead", Number(cell.dataset.step) === step));
         }
 
         function renderKeyboard() {
             const box = document.getElementById("keyboard");
-
             box.innerHTML = "";
-
             for (let octave = 0; octave < 2; octave++) {
                 for (let index = 0; index < 12; index++) {
                     const pitch = 48 + octave * 12 + index;
                     const key = document.createElement("button");
-
-                    key.className = `key ${
-                        [1, 3, 6, 8, 10].includes(index) ? "black" : ""
-                    }`;
-
+                    key.className = `key ${[1,3,6,8,10].includes(index) ? "black" : ""}`;
                     key.textContent = noteName(pitch);
                     key.onclick = () => addNote(pitch);
-
                     box.appendChild(key);
                 }
             }
@@ -2415,25 +1310,17 @@
 
         function addNote(pitch) {
             const lyricWords = words();
-
             if (selectedWord < 0) {
                 selectedWord = lyricWords.length ? 0 : -1;
-
-                if (selectedWord < 0) {
-                    return;
-                }
+                if (selectedWord < 0) return;
             }
 
             const song = currentSong();
-            const existing = song.melody.events.findIndex(
-                event => event.word === selectedWord && !event.grid
-            );
-
+            const existing = song.melody.events.findIndex(event => event.word === selectedWord && !event.grid && !event.drum);
             const start = existing >= 0
                 ? song.melody.events[existing].start
                 : song.melody.events.length
-                    ? song.melody.events[song.melody.events.length - 1].start +
-                      song.melody.events[song.melody.events.length - 1].duration
+                    ? song.melody.events[song.melody.events.length - 1].start + (song.melody.events[song.melody.events.length - 1].duration || 0)
                     : 0;
 
             const event = {
@@ -2441,39 +1328,24 @@
                 pitch,
                 start,
                 duration: selectedDuration,
-                chord: ""
+                chord: "",
+                instrument: document.getElementById("instrument").value
             };
 
-            if (existing >= 0) {
-                song.melody.events[existing] = event;
-            } else {
-                song.melody.events.push(event);
-            }
+            if (existing >= 0) song.melody.events[existing] = event;
+            else song.melody.events.push(event);
 
             selectedEvent = song.melody.events.indexOf(event);
-
-            playTone(pitch, 0.35);
+            playTone(pitch, 0.35, 0, event.instrument);
             saveMelody();
             renderMelody();
             showInspector();
         }
 
         function addRest() {
-            const song = currentSong();
-            const events = song.melody.events;
-            const start = events.length
-                ? events[events.length - 1].start + events[events.length - 1].duration
-                : 0;
-
-            events.push({
-                word: selectedWord,
-                pitch: 60,
-                start,
-                duration: selectedDuration,
-                rest: true,
-                chord: ""
-            });
-
+            const events = currentSong().melody.events;
+            const start = events.length ? events[events.length - 1].start + (events[events.length - 1].duration || 0) : 0;
+            events.push({ word: selectedWord, pitch: 60, start, duration: selectedDuration, rest: true, chord: "" });
             saveMelody();
             renderMelody();
             renderSongScore();
@@ -2481,7 +1353,6 @@
 
         function setDuration(value) {
             selectedDuration = Number(value);
-
             if (selectedEvent >= 0) {
                 currentSong().melody.events[selectedEvent].duration = selectedDuration;
                 saveMelody();
@@ -2490,85 +1361,45 @@
         }
 
         function togglePlayback() {
-            if (melodyPlayback) {
-                pauseMelodyPlayback();
-            } else {
-                startMelodyPlayback();
-            }
+            if (melodyPlayback) pauseMelodyPlayback();
+            else startMelodyPlayback();
         }
 
         function startMelodyPlayback() {
             ensureAudio();
-
             const song = currentSong();
             const secondsPerBeat = 60 / song.melody.bpm;
             const events = [...song.melody.events].sort((a, b) => a.start - b.start);
-
             melodyPlayback = true;
             document.getElementById("playBtn").textContent = "Ⅱ Pause";
 
             events.forEach(event => {
-                if (event.rest) {
-                    return;
-                }
-
-                if (event.grid) {
-                    playGridEventAt(
-                        event,
-                        event.start * secondsPerBeat,
-                        event.duration * secondsPerBeat
-                    );
-                } else {
-                    playTone(
-                        event.pitch,
-                        event.duration * secondsPerBeat,
-                        event.start * secondsPerBeat
-                    );
-                }
+                if (!event.rest) playProjectEvent(event, event.start * secondsPerBeat, (event.duration || 0.25) * secondsPerBeat);
             });
-
-            playGridPattern();
 
             const start = performance.now();
 
             function tick() {
-                if (!melodyPlayback) {
-                    return;
-                }
-
+                if (!melodyPlayback) return;
                 const beat = (performance.now() - start) / 1000 / secondsPerBeat;
-                const event = events.find(
-                    item => beat >= item.start && beat < item.start + item.duration
-                );
-
+                const event = events.find(item => beat >= item.start && beat < item.start + (item.duration || 0));
                 if (event) {
                     selectedWord = event.word ?? -1;
                     selectedEvent = song.melody.events.indexOf(event);
                     renderMelody();
                     renderSongScore();
                 }
-
                 highlightGridStep(Math.floor(beat * 4) % GRID_STEPS);
-
-                const total = Math.max(
-                    1,
-                    ...events.map(item => item.start + item.duration),
-                    GRID_STEPS / 4
-                );
-
+                const total = Math.max(1, ...events.map(item => item.start + (item.duration || 0)), GRID_STEPS / 4);
                 if (beat >= total) {
                     stopPlayback();
                     return;
                 }
-
                 melodyAnimation = requestAnimationFrame(tick);
             }
 
             tick();
-
-            if (metronome) {
-                startMetronome();
-            }
+            if (metronome) startMetronome();
         }
 
         function pauseMelodyPlayback() {
@@ -2590,28 +1421,18 @@
         function toggleMetronome() {
             metronome = !metronome;
             document.getElementById("metroBtn").classList.toggle("primary", metronome);
-
-            if (metronome && melodyPlayback) {
-                startMetronome();
-            } else if (!metronome) {
-                stopMetronomeTimer();
-            }
+            if (metronome && melodyPlayback) startMetronome();
+            else if (!metronome) stopMetronomeTimer();
         }
 
         function startMetronome() {
             stopMetronomeTimer();
-
             const seconds = 60 / currentSong().melody.bpm;
-
             function click() {
-                if (!metronome || !melodyPlayback) {
-                    return;
-                }
-
-                playTone(84, 0.055);
+                if (!metronome || !melodyPlayback) return;
+                playTone(84, 0.055, 0, "Piano");
                 melodyMetroTimer = setTimeout(click, seconds * 1000);
             }
-
             click();
         }
 
@@ -2622,31 +1443,19 @@
 
         function exportTxt() {
             const song = currentSong();
-
-            download(
-                `${song.title}\n\n${song.lyrics}`,
-                (song.title || "lyrics") + ".txt",
-                "text/plain"
-            );
+            download(`${song.title}\n\n${song.lyrics}`, `${song.title || "lyrics"}.txt`, "text/plain");
         }
 
         function exportProject() {
             const song = currentSong();
-
-            download(
-                JSON.stringify(song, null, 2),
-                (song.title || "song") + ".lyricnotes.json",
-                "application/json"
-            );
+            download(JSON.stringify(song, null, 2), `${song.title || "song"}.lyricnotes.json`, "application/json");
         }
 
         function download(data, name, type) {
             const link = document.createElement("a");
-
             link.href = URL.createObjectURL(new Blob([data], { type }));
             link.download = name;
             link.click();
-
             setTimeout(() => URL.revokeObjectURL(link.href), 1000);
         }
 
@@ -2656,36 +1465,13 @@
                 newSong();
             }
 
-            if (document.getElementById("melody").classList.contains("open")) {
-                const map = {
-                    a: 60,
-                    w: 61,
-                    s: 62,
-                    e: 63,
-                    d: 64,
-                    f: 65,
-                    t: 66,
-                    g: 67,
-                    y: 68,
-                    h: 69,
-                    u: 70,
-                    j: 71
-                };
+            if (!document.getElementById("melody").classList.contains("open")) return;
 
-                if (
-                    map[event.key.toLowerCase()] !== undefined &&
-                    !event.target.matches("input,select,textarea")
-                ) {
-                    addNote(map[event.key.toLowerCase()]);
-                }
-
-                if (
-                    event.code === "Space" &&
-                    !event.target.matches("input,textarea")
-                ) {
-                    event.preventDefault();
-                    togglePlayback();
-                }
+            const map = { a:60, w:61, s:62, e:63, d:64, f:65, t:66, g:67, y:68, h:69, u:70, j:71 };
+            if (map[event.key.toLowerCase()] !== undefined && !event.target.matches("input,select,textarea")) addNote(map[event.key.toLowerCase()]);
+            if (event.code === "Space" && !event.target.matches("input,textarea")) {
+                event.preventDefault();
+                togglePlayback();
             }
         });
 
